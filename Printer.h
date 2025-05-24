@@ -1,6 +1,11 @@
 #pragma once
 #include "Color.h"
 #include "Block.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <conio.h>
+#include <Windows.h>
 
 class Printer {
     private:
@@ -8,6 +13,8 @@ class Printer {
         int ab_y;
     public:
         Printer();
+        int get_x();
+        int get_y();
         int gotoxy(int x, int y);
         void SetColor(int color);
         void show_keys();
@@ -17,6 +24,6 @@ class Printer {
         int show_logo();
         int show_total_block(char total_block[21][14], int level);
         int show_gamestat(int level, int score, int lines_left);
-        int show_clear_screen();
+        int show_clear_screen(int score);
         int show_gameover();
 };

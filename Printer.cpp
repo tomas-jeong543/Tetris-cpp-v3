@@ -4,6 +4,14 @@
 
 Printer::Printer(): ab_x(5), ab_y(1) {}
 
+int Printer::get_x() {
+	return ab_x;
+}
+
+int Printer::get_y() {
+	return ab_y;
+}
+
 //좌표지정 함수
 int Printer::gotoxy(int x,int y)
 {
@@ -191,10 +199,22 @@ int Printer::show_logo()
 				
 				
 			}
-			show_cur_block(rand()%7,rand()%4,6,14);
-			show_cur_block(rand()%7,rand()%4,12,14);
-			show_cur_block(rand()%7,rand()%4,19,14);
-			show_cur_block(rand()%7,rand()%4,24,14);
+
+			Block* block = new Block(rand() % 7, rand() % 4, 6, 14);
+			show_cur_block(*block);
+			delete block;
+
+			block = new Block(rand() % 7, rand() % 4, 12, 14);
+			show_cur_block(*block);
+			delete block;
+
+			block = new Block(rand() % 7, rand() % 4, 19, 14);
+			show_cur_block(*block);
+			delete block;
+
+			block = new Block(rand() % 7, rand() % 4, 24, 14);
+			show_cur_block(*block);
+			delete block;
 		}
 		if(_kbhit())
 			break;
@@ -265,7 +285,7 @@ int Printer::show_gamestat(int level, int score, int lines_left)
 	return 0;
 }
 
-int Printer::show_clear_screen() {
+int Printer::show_clear_screen(int score) {
 	SetColor(YELLOW);
 	system("cls");
 	gotoxy(10, 9);

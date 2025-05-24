@@ -1,6 +1,10 @@
 #pragma once
 #include "cstdlib"
 #include <time.h>
+#include <stdio.h>
+#include <string.h>
+#include <conio.h>
+#include <Windows.h>
 
 class Block {
     private:
@@ -12,6 +16,7 @@ class Block {
     public:
         Block() = delete;
         Block(int stick_rate);
+        Block(int shape, int rotate, int x, int y);
         int get_x();
         int get_y();
         int get_shape();

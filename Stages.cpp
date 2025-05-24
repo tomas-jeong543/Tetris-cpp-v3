@@ -40,3 +40,7 @@ int Stages::get_clear_line(int level) {
 int Stages::get_stick_rate(int level) {
 	return stage_data[level].stick_rate;
 }
+
+int Stages::get_speed(int level) {
+	return stage_data[level].speed;
+}

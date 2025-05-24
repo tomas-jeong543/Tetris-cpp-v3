@@ -4,8 +4,8 @@
 #include "Printer.h"
 #include <stdio.h>
 #include <string.h>
-// #include <conio.h>
-// #include <Windows.h>
+#include <conio.h>
+#include <Windows.h>
 
 class Game {
     private:
@@ -21,6 +21,7 @@ class Game {
         Block* curr_block;
         Block* next_block;
     public:
+        Game();
         void run();
         int init();
         int input_data();
