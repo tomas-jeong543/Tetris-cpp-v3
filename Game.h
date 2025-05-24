@@ -20,6 +20,7 @@ class Game {
         Printer* printer;
         Block* curr_block;
         Block* next_block;
+        Block* keeped_block;
     public:
         Game();
         void run();
@@ -30,4 +31,5 @@ class Game {
         int merge_block();
         int check_full_line();
         int rotate();
+        int keep();
 };
