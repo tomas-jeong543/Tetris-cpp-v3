@@ -1,0 +1,76 @@
+# ---- Visual Studio C++ ----
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.lib
+*.pdb
+*.idb
+*.ipch
+*.iobj
+*.iopt
+*.log
+*.sbr
+*.tlh
+*.tli
+*.tmp
+*.cache
+*.ilk
+
+# Precompiled headers
+*.pch
+*.gch
+
+# IntelliSense database
+*.sdf
+*.opensdf
+*.VC.db
+
+# VS Code workspace settings (optional)
+.vscode/
+
+# Visual Studio working folder
+.vs/
+
+# CMake build folders (if using CMake)
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Other
+*.ncb
+*.aps
+*.plg
+
+# Compiled resource files
+*.res
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+
+# Crash dumps
+*.mdmp
+
+# Logs
+*.log
+
+# Git specific
+*.orig
+
+# Others you might want
+*.csv
+*.out
+*.obj
+
