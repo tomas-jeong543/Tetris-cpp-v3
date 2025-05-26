@@ -588,4 +588,3 @@ bool Game::isReverseWorld(int level)
 	}
 	
 }
-
