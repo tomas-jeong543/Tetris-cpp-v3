@@ -1,4 +1,3 @@
-
 #include"Game.h"
 #include <iostream>
 #include<stdio.h>
@@ -588,3 +587,4 @@ bool Game::isReverseWorld(int level)
 	}
 	
 }
+
